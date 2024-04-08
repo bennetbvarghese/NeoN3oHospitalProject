@@ -13,14 +13,14 @@ const Register = () => {
         <form>
           <div>
             <input
-              type="text"
-              placeholder="First Name"
+              type="email"
+              placeholder="Email"
           
             
             />
             <input
-              type="text"
-              placeholder="Last Name"
+              type="password"
+              placeholder="Password"
            
               
             />
@@ -28,7 +28,7 @@ const Register = () => {
           <div>
             <input
               type="text"
-              placeholder="Email"
+              placeholder="Name"
               
             />
             <input
@@ -39,10 +39,8 @@ const Register = () => {
           </div>
           <div>
             <input
-              type="number"
-              placeholder="NIC"
-              
-            />
+              type="text"
+              placeholder="Address"/>
             <input
               type="date"
               placeholder="Date of Birth"
@@ -55,11 +53,17 @@ const Register = () => {
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
-            <input
-              type="password"
-              placeholder="Password"
-              
-            />
+            <select >
+              <option value="">Select Blood Group</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
           </div>
           <div
             

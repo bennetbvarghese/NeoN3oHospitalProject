@@ -1,9 +1,11 @@
-import React ,{useState}from 'react'
+import React ,{useContext,useState}from 'react'
+import { Context } from "../main";
 import { toast ,ToastContainer} from 'react-toastify';
-import {Link , useNavigate} from 'react-router-dom';
+import {Link , useNavigate,Navigate} from 'react-router-dom';
 import axios from 'axios'; // Assuming you're using Axios for requests
 
 const Login = () => {
+  const { isAuthenticated, setIsAuthenticated } = useContext(Context);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigateTo=useNavigate();
@@ -29,6 +31,7 @@ const Login = () => {
       if (data.success) { // Assuming the backend response includes a success property
         // Handle successful login (e.g., store token, navigate)
         toast.success(data.message || "Login successful");
+        setIsAuthenticated(true);
         navigateTo("/"); // Or based on your app logic
       } else {
         toast.error(data.message || "Invalid Credentials"); // Use error message from response, if provided
@@ -38,6 +41,9 @@ const Login = () => {
       toast.error("Login failed");
     }
   };
+  if (isAuthenticated) {
+    return <Navigate to={"/"} />;
+  }
 
   return (
     <>
@@ -63,10 +69,21 @@ const Login = () => {
  
           />
           <div
-
+          style={{
+            gap: "10px",
+            justifyContent: "flex-end",
+            flexDirection: "row",
+          }}
           >
+            <p style={{ marginBottom: 0 }}>Not Registered?</p>
+            <Link
+              to={"/register"}
+              style={{ textDecoration: "none", color: "#271776ca" }}
+            >
+              Register Now
+            </Link>
           </div>
-          <div >
+          <div style={{ justifyContent: "center", alignItems: "center" }}>
             <button type="submit">Login</button>
           </div>
         </form>

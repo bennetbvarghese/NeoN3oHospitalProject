@@ -41,6 +41,14 @@ export const signup = async (req, res, next) => {
       res.status(500).json('Internal Server Error');
     }
   };
+  export const patientsignout = async (req, res, next) => {
+    try {
+      res.clearCookie('patientToken');
+      res.status(200).json({success:true,message:'User has been logged out!'});
+    } catch (error) {
+      next(error);
+    }
+  };
 //Doctors
 // export const register = async (req, res, next) => {
 //   const { name, email, password } = req.body;
