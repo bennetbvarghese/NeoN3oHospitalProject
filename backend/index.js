@@ -4,6 +4,8 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRouter from './routes/authroute.js';
+import appointmentRouter from './routes/appointmentroute.js';
+import basicRouter from './routes/basicroutes.js';
 //import userRouter from './routes/userroute.js';
 
 
@@ -26,6 +28,8 @@ app.listen(port, () => {
 })
 
 app.use('/backend/auth',authRouter);
+app.use('/backend/appointment',appointmentRouter);
+app.use('/backend/basic',basicRouter);
 // app.use('/backend/user',userRouter);
 
 app.get('/', (req, res) => {

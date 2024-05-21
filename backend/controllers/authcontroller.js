@@ -1,5 +1,6 @@
 import User from '../models/usermodel.js';
 import Doctor from '../models/doctormodel.js';
+import DoctorSimple from '../models/doctormodelsimple.js';
 import bcryptjs from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import ErrorHandler from '../authutils/error.js';
@@ -11,14 +12,15 @@ export const signup = async (req, res, next) => {
     try {
       const existingUser = await User.findOne({ email });
       if(existingUser){
-        return res.status(400).json('Username already exists!');
+        return res.status(400).json({ message: 'Email already exists' });
       }
       const hashedPassword = bcryptjs.hashSync(password, 10);
       const newUser = new User({ email, password: hashedPassword ,name, phone,photo,role,gender,bloodType,appointments });
       await newUser.save();
-      res.status(201).json('User created successfully!');
-      res.redirect('/signin');
+      //res.status(201).json('User created successfully!');
+      //res.redirect('/signin');
       console.log(newUser);
+      return res.status(201).json({success:true,message:'User created successfully!'});
     } catch (error) {
       res.status(500).json('Internal Server Error');
       next(error);
@@ -50,23 +52,23 @@ export const signup = async (req, res, next) => {
     }
   };
 //Doctors
-// export const register = async (req, res, next) => {
-//   const { name, email, password } = req.body;
-//   try {
-//     const existingUser = await Doctor.findOne({ email });
-//     if(existingUser){
-//       return res.status(400).json('Username already exists!');
-//     }
-//     const hashedPassword = bcryptjs.hashSync(password, 10);
-//     const newUser = new Doctor({ name, email, password: hashedPassword });
-//     await newUser.save();
-//     res.status(201).json('User created successfully!');
-//     console.log( newUser);
-//   } catch (error) {
-//     res.status(500).json('Internal Server Error');
-//     next(error);
-//   }
-// };
+export const register = async (req, res, next) => {
+  const { firstname,lastname,email,password,phone,department } = req.body;
+  try {
+    const existingUser = await DoctorSimple.findOne({ email });
+    if(existingUser){
+      return res.status(400).json('Username already exists!');
+    }
+    const hashedPassword = bcryptjs.hashSync(password, 10);
+    const newUser = new DoctorSimple({ firstname,lastname, email, password: hashedPassword , phone,department });
+    await newUser.save();
+    res.status(201).json('User created successfully!');
+    console.log( newUser);
+  } catch (error) {
+    res.status(500).json('Internal Server Error');
+    next(error);
+  }
+};
 // export const login = async (req, res, next) => {
 //   const { email, password } = req.body;
 //   try {
