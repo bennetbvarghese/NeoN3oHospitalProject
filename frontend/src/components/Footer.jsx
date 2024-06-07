@@ -8,32 +8,37 @@ const Footer = () => {
     {
       id: 1,
       day: "Monday",
-      time: "9:00 AM - 11:00 PM",
+      time: "9:00 AM - 12:00 AM",
     },
     {
       id: 2,
       day: "Tuesday",
-      time: "12:00 PM - 12:00 AM",
+      time: "9:00 AM - 12:00 AM",
     },
     {
       id: 3,
       day: "Wednesday",
-      time: "10:00 AM - 10:00 PM",
+      time: "9:00 AM - 12:00 AM",
     },
     {
       id: 4,
       day: "Thursday",
-      time: "9:00 AM - 9:00 PM",
+      time: "9:00 AM - 12:00 AM",
     },
     {
       id: 5,
-      day: "Monday",
-      time: "3:00 PM - 9:00 PM",
+      day: "Friday",
+      time: "9:00 AM - 12:00 AM",
     },
     {
       id: 6,
       day: "Saturday",
-      time: "9:00 AM - 3:00 PM",
+      time: "9:00 AM - 12:00 AM",
+    },
+    {
+      id: 7,
+      day: "Sunday",
+      time: "12:00 AM - 12:00 AM",
     },
   ];
 
@@ -68,15 +73,15 @@ const Footer = () => {
             <h4>Contact</h4>
             <div>
               <FaPhone />
-              <span>999-999-9999</span>
+              <span>000-0000-000</span>
             </div>
             <div>
               <MdEmail />
-              <span>zeelab@gmail.com</span>
+              <span>nhospital@gmail.com</span>
             </div>
             <div>
               <FaLocationArrow />
-              <span>Karachi, Pakistan</span>
+              <span>Somewhere,In the World</span>
             </div>
           </div>
         </div>

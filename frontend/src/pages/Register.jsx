@@ -47,8 +47,7 @@ const Register = () => {
         <h2>Sign Up</h2>
         <p>Please Sign Up To Continue</p>
         <p>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa
-             voluptas expedita itaque ex, totam ad quod error?
+        Join our community! Create your account by filling in the details below. Signing up gives you access to exclusive features and personalized content. Rest assured, your information is secure with us. If you need help, our support team is here to assist you. Welcome aboard!
         </p>
         <h2>Personal Information</h2>
         <form onSubmit={handleSubmit}> 

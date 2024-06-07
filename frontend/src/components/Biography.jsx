@@ -11,25 +11,13 @@ const Biography = ({imageUrl}) => {
           <p>Biography</p>
           <h3>Who We Are</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            blanditiis sequi aperiam. Debitis fugiat harum ex maxime illo
-            consequatur mollitia voluptatem omnis nihil nesciunt beatae esse
-            ipsam, sapiente totam aspernatur porro ducimus aperiam nisi. Ex
-            magnam voluptatum consectetur reprehenderit fugiat recusandae aut
-            similique illum natus velit, praesentium nostrum nesciunt. Deleniti,
-            nesciunt laboriosam totam iusto!
+          Neo N3o Hospital, established in 0000, has rapidly emerged as a beacon of advanced healthcare and patient-centric services. Located in the heart of the world, our state-of-the-art facility is designed to offer a comprehensive range of medical services, from routine check-ups to complex surgical procedures.
           </p>
-          <p>We are all in 2024!</p>
-          <p>We are working on a MERN STACK PROJECT.</p>
+          <p>In addition to our clinical services, Neo N3o is also a center for medical research and education, continuously striving to advance the field of medicine and improve patient care standards. We believe in a collaborative approach to healthcare, working closely with patients, their families, and other healthcare providers to achieve the best possible results.</p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            assumenda exercitationem accusamus sit repellendus quo optio dolorum
-            corporis corrupti. Quas similique vel minima veniam tenetur
-            obcaecati atque magni suscipit laboriosam! Veniam vitae minus nihil
-            cupiditate natus provident. Ex illum quasi pariatur odit nisi
-            voluptas illo qui ipsum mollitia. Libero, assumenda?
+          Our hospital is staffed by a team of highly skilled and compassionate healthcare professionals, including doctors, nurses, and support staff, all dedicated to providing the highest standard of care. At Neo N3o, we combine the latest in medical technology with a holistic approach to treatment, ensuring that each patient receives personalized attention and care tailored to their unique needs.
           </p>
-          <p>Lorem ipsum dolor sit amet!</p>
+          <p>At Neo N3o Hospital, your health is our mission, and we are dedicated to being your trusted partner in well-being and recovery.</p>
           <p>Coding is fun!</p>
         </div>
       </div>

@@ -1,16 +1,19 @@
-import React ,{useContext,useState}from 'react'
+import React, { useContext, useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { Context } from "../main";
-import { toast ,ToastContainer} from 'react-toastify';
-import {Link , useNavigate,Navigate} from 'react-router-dom';
-import axios from 'axios'; // Assuming you're using Axios for requests
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const navigateTo=useNavigate();
+
+  const navigateTo = useNavigate();
+
   const handleLogin = async (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault();
     const values = { email, password }; // Use destructuring for clarity
 
     try {
@@ -41,18 +44,17 @@ const Login = () => {
       toast.error("Login failed");
     }
   };
+
   if (isAuthenticated) {
     return <Navigate to={"/"} />;
   }
 
   return (
     <>
-  <div className="container form-component login-form">
-        <h2>Sign In</h2>
-        <p>Please Login To Continue</p>
-        <p>
-        Welcome! Please sign in to access your account. By logging in, you agree to our terms of service and privacy policy. Your security and privacy are our top priorities. If you encounter any issues, feel free to reach out to our support team for assistance.
-        </p>
+      <section className="container form-component">
+        <img src="/logo.png" alt="logo" className="logo-img" />
+        <h1 className="form-title"> Welcome TO Neo N3o Hospital </h1>
+        <p>Only Admins Are Allowed To Access These Resources!</p>
         <form onSubmit={handleLogin}>
           <input
             type="text"
@@ -65,30 +67,20 @@ const Login = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
- 
           />
-          <div
-          style={{
-            gap: "10px",
-            justifyContent: "flex-end",
-            flexDirection: "row",
-          }}
-          >
-            <p style={{ marginBottom: 0 }}>Not Registered?</p>
-            <Link
-              to={"/register"}
-              style={{ textDecoration: "none", color: "#271776ca" }}
-            >
-              Register Now
-            </Link>
-          </div>
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
           <div style={{ justifyContent: "center", alignItems: "center" }}>
             <button type="submit">Login</button>
           </div>
         </form>
-      </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
