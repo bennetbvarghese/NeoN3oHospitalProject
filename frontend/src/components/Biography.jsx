@@ -18,7 +18,7 @@ const Biography = ({imageUrl}) => {
           Our hospital is staffed by a team of highly skilled and compassionate healthcare professionals, including doctors, nurses, and support staff, all dedicated to providing the highest standard of care. At Neo N3o, we combine the latest in medical technology with a holistic approach to treatment, ensuring that each patient receives personalized attention and care tailored to their unique needs.
           </p>
           <p>At Neo N3o Hospital, your health is our mission, and we are dedicated to being your trusted partner in well-being and recovery.</p>
-          <p>Coding is fun!</p>
+          <p>P.S. Coding is fun!!! </p>
         </div>
       </div>
     </>

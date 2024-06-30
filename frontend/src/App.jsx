@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import NotFound from "./pages/NotFound";
 import { Context } from "./main";
 const App = () => {
   const { isAuthenticated, setIsAuthenticated, setUser } =
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
         <ToastContainer position="top-center" />

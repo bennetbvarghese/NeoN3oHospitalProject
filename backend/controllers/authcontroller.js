@@ -51,18 +51,26 @@ export const signup = async (req, res, next) => {
       next(error);
     }
   };
+  export const adminsignout = async (req, res, next) => {
+    try {
+      res.clearCookie('adminToken');
+      res.status(200).json({success:true,message:'User has been logged out!'});
+    } catch (error) {
+      next(error);
+    }
+  }
 //Doctors
 export const register = async (req, res, next) => {
   const { firstname,lastname,email,password,phone,department } = req.body;
   try {
     const existingUser = await DoctorSimple.findOne({ email });
     if(existingUser){
-      return res.status(400).json('Username already exists!');
+      return res.status(400).json({message:'Username already exists!'});
     }
     const hashedPassword = bcryptjs.hashSync(password, 10);
     const newUser = new DoctorSimple({ firstname,lastname, email, password: hashedPassword , phone,department });
     await newUser.save();
-    res.status(201).json('User created successfully!');
+    res.status(201).json({message:'User created successfully!'});
     console.log( newUser);
   } catch (error) {
     res.status(500).json('Internal Server Error');
