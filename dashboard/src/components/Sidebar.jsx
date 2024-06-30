@@ -15,17 +15,16 @@ function Sidebar() {
 
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
   const handleLogout = async () => {
-    await axios
-      .get("http://localhost:3000/backend/auth/patientslogout", {
-        withCredentials: true,
-      })
-      .then((res) => {
-        toast.success(res.data.message);
-        setIsAuthenticated(false);
-      })
-      .catch((err) => {
-        toast.error(err.response.data.message);
-      });
+    try{
+      const res = await fetch("http://localhost:3000/backend/auth/adminsignout"
+      );
+      const data = await res.json();
+      console.log(data);
+      toast.success(data.message);
+      setIsAuthenticated(false);
+      } catch (err) {
+        console.log(err);
+      }
   };
   const navigateTo = useNavigate();
 

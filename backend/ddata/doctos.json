@@ -1,0 +1,147 @@
+[
+    
+    {
+        "firstname": "Alice",
+        "lastname": "Johnson",
+        "email": "alice.johnson3@gmail.com",
+        "password": "pwd23456",
+        "phone": "1234567893",
+        "department": "Neurology"
+    },
+    {
+        "firstname": "Bob",
+        "lastname": "Brown",
+        "email": "bob.brown4@gmail.com",
+        "password": "pwd78901",
+        "phone": "1234567894",
+        "department": "Orthopedics"
+    },
+    {
+        "firstname": "Emily",
+        "lastname": "Davis",
+        "email": "emily.davis5@gmail.com",
+        "password": "pwd34567",
+        "phone": "1234567895",
+        "department": "Pediatrics"
+    },
+    {
+        "firstname": "Michael",
+        "lastname": "Miller",
+        "email": "michael.miller6@gmail.com",
+        "password": "pwd89012",
+        "phone": "1234567896",
+        "department": "Dermatology"
+    },
+    {
+        "firstname": "Sarah",
+        "lastname": "Wilson",
+        "email": "sarah.wilson7@gmail.com",
+        "password": "pwd45678",
+        "phone": "1234567897",
+        "department": "Ophthalmology"
+    },
+    {
+        "firstname": "David",
+        "lastname": "Martinez",
+        "email": "david.martinez8@gmail.com",
+        "password": "pwd90123",
+        "phone": "1234567898",
+        "department": "Gastroenterology"
+    },
+    {
+        "firstname": "Linda",
+        "lastname": "Anderson",
+        "email": "linda.anderson9@gmail.com",
+        "password": "pwd56789",
+        "phone": "1234567899",
+        "department": "Oncology"
+    },
+    {
+        "firstname": "James",
+        "lastname": "Thomas",
+        "email": "james.thomas10@gmail.com",
+        "password": "pwd01234",
+        "phone": "1234567800",
+        "department": "Radiology"
+    },
+    {
+        "firstname": "Barbara",
+        "lastname": "Taylor",
+        "email": "barbara.taylor11@gmail.com",
+        "password": "pwd67890",
+        "phone": "1234567801",
+        "department": "Urology"
+    },
+    {
+        "firstname": "Robert",
+        "lastname": "Moore",
+        "email": "robert.moore12@gmail.com",
+        "password": "pwd12345",
+        "phone": "1234567802",
+        "department": "Anesthesiology"
+    },
+    {
+        "firstname": "Patricia",
+        "lastname": "Jackson",
+        "email": "patricia.jackson13@gmail.com",
+        "password": "pwd89012",
+        "phone": "1234567803",
+        "department": "Endocrinology"
+    },
+    {
+        "firstname": "Charles",
+        "lastname": "White",
+        "email": "charles.white14@gmail.com",
+        "password": "pwd45678",
+        "phone": "1234567804",
+        "department": "Hematology"
+    },
+    {
+        "firstname": "Jennifer",
+        "lastname": "Harris",
+        "email": "jennifer.harris15@gmail.com",
+        "password": "pwd23456",
+        "phone": "1234567805",
+        "department": "Immunology"
+    },
+    {
+        "firstname": "Thomas",
+        "lastname": "Martin",
+        "email": "thomas.martin16@gmail.com",
+        "password": "pwd78901",
+        "phone": "1234567806",
+        "department": "Nephrology"
+    },
+    {
+        "firstname": "Karen",
+        "lastname": "Thompson",
+        "email": "karen.thompson17@gmail.com",
+        "password": "pwd34567",
+        "phone": "1234567807",
+        "department": "Rheumatology"
+    },
+    {
+        "firstname": "Daniel",
+        "lastname": "Garcia",
+        "email": "daniel.garcia18@gmail.com",
+        "password": "pwd90123",
+        "phone": "1234567808",
+        "department": "Pulmonology"
+    },
+    {
+        "firstname": "Nancy",
+        "lastname": "Martinez",
+        "email": "nancy.martinez19@gmail.com",
+        "password": "pwd56789",
+        "phone": "1234567809",
+        "department": "Psychiatry"
+    },
+    {
+        "firstname": "Paul",
+        "lastname": "Robinson",
+        "email": "paul.robinson20@gmail.com",
+        "password": "pwd01234",
+        "phone": "1234567810",
+        "department": "Dermatology"
+    }
+]

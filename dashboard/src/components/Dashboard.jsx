@@ -80,9 +80,9 @@ const Dashboard = () => {
                 </h5>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis, nam molestias. Eaque molestiae ipsam commodi neque.
-                Assumenda repellendus necessitatibus itaque.
+              Please be informed that there will be a scheduled maintenance window this weekend from blue moon to red moon. During this period, pls work. Kindly plan accordingly and ensure minimal disruption.
+
+Thank you for your cooperation.
               </p>
             </div>
           </div>

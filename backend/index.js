@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import authRouter from './routes/authroute.js';
 import appointmentRouter from './routes/appointmentroute.js';
@@ -23,6 +24,7 @@ mongoose.connect(process.env.MONGO).then(()=> {
 const app = express()
 app.use(cors());
 app.use(express.json())
+app.use(bodyParser.json());
 
 app.listen(port, () => {
     console.log('Server is running '+port+'...')

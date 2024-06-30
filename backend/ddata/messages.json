@@ -1,0 +1,65 @@
+[
+    {
+        "firstname": "Jane",
+        "lastname": "Smith",
+        "email": "jane.smith2@gmail.com",
+        "phone": "89127938472",
+        "message": "Friendly staff."
+    },
+    {
+        "firstname": "Alice",
+        "lastname": "Johnson",
+        "email": "alice.johnson3@gmail.com",
+        "phone": "89127938473",
+        "message": "Clean facilities."
+    },
+    {
+        "firstname": "Bob",
+        "lastname": "Williams",
+        "email": "bob.williams4@gmail.com",
+        "phone": "89127938474",
+        "message": "Highly recommend!"
+    },
+    {
+        "firstname": "Charlie",
+        "lastname": "Brown",
+        "email": "charlie.brown5@gmail.com",
+        "phone": "89127938475",
+        "message": "Very satisfied."
+    },
+    {
+        "firstname": "David",
+        "lastname": "Miller",
+        "email": "david.miller6@gmail.com",
+        "phone": "89127938476",
+        "message": "Excellent experience."
+    },
+    {
+        "firstname": "Eva",
+        "lastname": "Davis",
+        "email": "eva.davis7@gmail.com",
+        "phone": "89127938477",
+        "message": "Very helpful staff."
+    },
+    {
+        "firstname": "Fiona",
+        "lastname": "Garcia",
+        "email": "fiona.garcia8@gmail.com",
+        "phone": "89127938478",
+        "message": "Professional and courteous."
+    },
+    {
+        "firstname": "George",
+        "lastname": "Martinez",
+        "email": "george.martinez9@gmail.com",
+        "phone": "89127938479",
+        "message": "Will visit again!"
+    },
+    {
+        "firstname": "Hannah",
+        "lastname": "Lopez",
+        "email": "hannah.lopez10@gmail.com",
+        "phone": "89127938470",
+        "message": "Top-notch service."
+    }
+]

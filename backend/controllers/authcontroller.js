@@ -1,7 +1,7 @@
 import User from '../models/usermodel.js';
 import Doctor from '../models/doctormodel.js';
 import DoctorSimple from '../models/doctormodelsimple.js';
-import bcryptjs from 'bcryptjs';
+import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import ErrorHandler from '../authutils/error.js';
 import { cookiee } from '../authutils/verifytoken.js';
@@ -14,7 +14,10 @@ export const signup = async (req, res, next) => {
       if(existingUser){
         return res.status(400).json({ message: 'Email already exists' });
       }
-      const hashedPassword = bcryptjs.hashSync(password, 10);
+      if (!password || typeof password !== 'string') {
+        return res.status(400).json({ message: 'Password is required and must be a string' });
+    }
+      const hashedPassword = await bcrypt.hash(password, 10);
       const newUser = new User({ email, password: hashedPassword ,name, phone,photo,role,gender,bloodType,appointments });
       await newUser.save();
       //res.status(201).json('User created successfully!');
@@ -31,7 +34,7 @@ export const signup = async (req, res, next) => {
     try {
       const validUser = await User.findOne({ email });
       if (!validUser) return next(new ErrorHandler('User not found!',400));
-      const validPassword = bcryptjs.compareSync(password, validUser.password);
+      const validPassword = bcrypt.compare(password, validUser.password);
       if (!validPassword) return next(new ErrorHandler(401, 'Wrong credentials!'));
       const token = jwt.sign({ id: validUser._id}, process.env.JWT_SECRET,{expiresIn: '30d'});
       const { password: pass, ...rest } = validUser._doc;
@@ -54,7 +57,7 @@ export const signup = async (req, res, next) => {
   export const adminsignout = async (req, res, next) => {
     try {
       res.clearCookie('adminToken');
-      res.status(200).json({success:true,message:'User has been logged out!'});
+      res.status(200).json({success:true,message:'Admin has been logged out!'});
     } catch (error) {
       next(error);
     }
@@ -67,7 +70,7 @@ export const register = async (req, res, next) => {
     if(existingUser){
       return res.status(400).json({message:'Username already exists!'});
     }
-    const hashedPassword = bcryptjs.hashSync(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 10);
     const newUser = new DoctorSimple({ firstname,lastname, email, password: hashedPassword , phone,department });
     await newUser.save();
     res.status(201).json({message:'User created successfully!'});

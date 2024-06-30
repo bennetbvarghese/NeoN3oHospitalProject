@@ -1,0 +1,90 @@
+[
+    {
+        "email": "alice.johnson3@gmail.com",
+        "password": "password123",
+        "name": "Alice Johnson",
+        "phone": "89127938473",
+        "photo": "",
+        "role": "patient",
+        "gender": "Female",
+        "bloodType": "B+",
+        "appointments": []
+    },
+    {
+        "email": "bob.williams4@gmail.com",
+        "password": "qwerty456",
+        "name": "Bob Williams",
+        "phone": "89127938474",
+        "photo": "",
+        "role": "patient",
+        "gender": "Male",
+        "bloodType": "AB+",
+        "appointments": []
+    },
+    {
+        "email": "charlie.brown5@gmail.com",
+        "password": "charlie123",
+        "name": "Charlie Brown",
+        "phone": "89127938475",
+        "photo": "",
+        "role": "patient",
+        "gender": "Male",
+        "bloodType": "O-",
+        "appointments": []
+    },
+    {
+        "email": "david.miller6@gmail.com",
+        "password": "david789",
+        "name": "David Miller",
+        "phone": "89127938476",
+        "photo": "",
+        "role": "patient",
+        "gender": "Male",
+        "bloodType": "A+",
+        "appointments": []
+    },
+    {
+        "email": "eva.davis7@gmail.com",
+        "password": "eva456",
+        "name": "Eva Davis",
+        "phone": "89127938477",
+        "photo": "",
+        "role": "patient",
+        "gender": "Female",
+        "bloodType": "B-",
+        "appointments": []
+    },
+    {
+        "email": "fiona.garcia8@gmail.com",
+        "password": "fiona123",
+        "name": "Fiona Garcia",
+        "phone": "89127938478",
+        "photo": "",
+        "role": "patient",
+        "gender": "Female",
+        "bloodType": "AB-",
+        "appointments": []
+    },
+    {
+        "email": "george.martinez9@gmail.com",
+        "password": "george789",
+        "name": "George Martinez",
+        "phone": "89127938479",
+        "photo": "",
+        "role": "patient",
+        "gender": "Male",
+        "bloodType": "O+",
+        "appointments": []
+    },
+    {
+        "email": "hannah.lopez10@gmail.com",
+        "password": "hannah456",
+        "name": "Hannah Lopez",
+        "phone": "89127938470",
+        "photo": "",
+        "role": "patient",
+        "gender": "Female",
+        "bloodType": "A-",
+        "appointments": []
+    }
+]

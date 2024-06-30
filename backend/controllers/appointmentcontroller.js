@@ -56,7 +56,8 @@ export const postAppointment = catchAsyncErrors(async (req, res, next) => {
         )
       );
     }
-    const user = await User.findOne({name:firstName});
+    const name= firstName+" "+lastName;
+    const user = await User.findOne({name:name});
     console.log(user)
     const doctorId = isConflict[0]._id;
     const patientId = user._id;
