@@ -1,4 +1,4 @@
-# 🏥 Hospital Management System
+# 🏥 NeoN3o Hospital Management System
 
 Welcome to the Hospital Management System! 🎉 This is a comprehensive hospital management application built using the MERN stack. It leverages advanced encryption features to ensure data security and includes an intuitive admin panel for efficient management.
 
@@ -65,6 +65,36 @@ Make sure to configure the following environment variables:
    ```bash
    npm run client
    ```
+## Images
+
+### Home Screen
+![Alt Text](NeoN3oHosp%20Images/Home.png)
+
+### Who Are We
+![Alt Text](NeoN3oHosp%20Images/Who%20are%20we.png)
+
+### Sign Up
+![Alt Text](NeoN3oHosp%20Images/Signup.png)
+
+### Appointment
+![Alt Text](NeoN3oHosp%20Images/Appointment%201.png)
+![Alt Text](NeoN3oHosp%20Images/Appointment.png)
+
+### Send Message
+![Alt Text](NeoN3oHosp%20Images/Send%20Message.png)
+
+### Admin Home
+![Alt Text](NeoN3oHosp%20Images/AdminHome.png)
+
+### Doctors Register
+![Alt Text](NeoN3oHosp%20Images/DoctorsRegister.png)
+
+### Doctors
+![Alt Text](NeoN3oHosp%20Images/Admindoctors.png)
+
+### Messages
+![Alt Text](NeoN3oHosp%20Images/Messages.png)
+
 
 ## 🙌 Contributing
 We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details on how to get involved.
