@@ -67,7 +67,7 @@ Make sure to configure the following environment variables:
    ```
 
 ## 🙌 Contributing
-We welcome contributions! Please read our Contributing Guidelines for more details on how to get involved.
+We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details on how to get involved.
 
 1. Fork the repository
 2. Create your feature branch (git checkout -b feature/YourFeature)
