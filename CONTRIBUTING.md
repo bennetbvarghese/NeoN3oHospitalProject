@@ -1,6 +1,6 @@
-# Contributing to MailerDome
+# Contributing to HospitalSystem
 
-🎉 Thanks for considering contributing to MailerDome! 🎉
+🎉 Thanks for considering contributing to HospitalSystem! 🎉
 
 We welcome contributions of all kinds, including bug fixes, new features, documentation improvements, and more. To make the process as smooth as possible, please follow these guidelines.
 
@@ -8,7 +8,7 @@ We welcome contributions of all kinds, including bug fixes, new features, docume
 
 ### Reporting Issues
 
-If you encounter any bugs, glitches, or have suggestions for improvements, please [open an issue](https://github.com/yourusername/MailerDome/issues) on GitHub. Include as much detail as possible to help us understand and resolve the issue quickly.
+If you encounter any bugs, glitches, or have suggestions for improvements, please [open an issue](https://github.com/bennetbvarghese/NeoN3oHospitalProject/issues) on GitHub. Include as much detail as possible to help us understand and resolve the issue quickly.
 
 ### Submitting Changes
 
@@ -18,8 +18,8 @@ If you encounter any bugs, glitches, or have suggestions for improvements, pleas
 2. **Clone Your Fork:**
     - Clone your forked repository to your local machine.
     ```bash
-    git clone https://github.com/yourusername/MailerDome.git
-    cd MailerDome
+    git clone https://github.com/bennetbvarghese/NeoN3oHospitalProject.git
+    cd NeoN3oHospitalProject
     ```
 
 3. **Create a Branch:**
